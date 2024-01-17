@@ -17,7 +17,7 @@ public class Calculator {
             char operator = s.charAt(0);
             int b = Integer.parseInt(string[2]);
             if (string.length > 3) {
-                throw new Exception("Формат математической операции не удовлетворяет заданию");
+                throw new Exception("Формат математической операции не удовлетворяет заданию - два операнда и один оператор (+, -, /, *)");
             }
             if (a <= 0 || a > 10 || b <= 0 || b > 10) {
                 throw new Exception("Введённое значение не удовлетворяет условию");
